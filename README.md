@@ -22,7 +22,7 @@ cd ~/.claude-config
 
 Una vez (en el server, como bare repo):
 ```bash
-ssh jmcp-home-server.taile195ce.ts.net
+ssh <TAILSCALE_HOST>
 sudo mkdir -p /srv/git/claude-config.git
 sudo git init --bare /srv/git/claude-config.git
 sudo chown -R $USER:$USER /srv/git/claude-config.git
@@ -30,7 +30,7 @@ sudo chown -R $USER:$USER /srv/git/claude-config.git
 
 En cada maquina (con Tailscale arriba):
 ```bash
-git clone <usuario>@jmcp-home-server.taile195ce.ts.net:/srv/git/claude-config.git ~/.claude-config
+git clone <usuario>@<TAILSCALE_HOST>:/srv/git/claude-config.git ~/.claude-config
 cd ~/.claude-config
 ./install.sh
 ```
