@@ -6,6 +6,7 @@ Skills y configuracion personal de Claude Code, sincronizada entre maquinas.
 
 - `skills/tdd-workflow/SKILL.md` — flujo TDD adaptado a Vitest + Next.js (Server Actions, Supabase, Web Crypto).
 - `skills/tests-status/SKILL.md` — auditoria del estado de cobertura de tests por proyecto. No modifica codigo.
+- `skills/web-perf-audit/SKILL.md` — auditoria de rendimiento web (Core Web Vitals via Lighthouse, bundle JS, antipatrones Next.js, imagenes). No modifica codigo.
 - `install.sh` — bootstrap idempotente que enlaza `skills/*` a `~/.claude/skills/`.
 
 ## Instalacion en una maquina nueva
